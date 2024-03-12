@@ -24,7 +24,7 @@ body {
 /*Globales*/
 .contenedor {
     max-width: 120rem;
-    width: 90%;
+    width: 90%; /*estas dos primeras lineas se puede resumir asi width:min(90%, 120rem)*/
     margin: 0 auto; /*para centrar el contenido ya que no se va a tener un display flex*/
 }
 
@@ -181,4 +181,16 @@ img {
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+
+/*Nosotros main*/
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .parrafo {
+        margin-top: 0;
+    }
 }
