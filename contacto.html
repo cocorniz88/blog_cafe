@@ -43,16 +43,27 @@
 
         <form class="formulario">
             <div class="campo">
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Tu Nombre" id="nombre"> <!-- el id debe coincidir con el for del label para que cuando se de click en el nombre se active el input-->
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input 
+                class="campo__field"
+                type="text" 
+                placeholder="Tu Nombre" 
+                id="nombre"> <!-- el id debe coincidir con el for del label para que cuando se de click en el nombre se active el input-->
             </div>
             <div class="campo">
-                <label for="email">E-mail</label>
-                <input type="email" placeholder="tu E-mal" id="email"> 
+                <label class="campo__label" for="email">E-mail</label>
+                <input 
+                class="campo__field"
+                type="email" 
+                placeholder="tu E-mal" 
+                id="email"> 
             </div>
             <div class="campo">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje"></textarea>
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea 
+                class="campo__field"
+                id="mensaje">
+                </textarea>
             </div>
 
             <div class="campo">
